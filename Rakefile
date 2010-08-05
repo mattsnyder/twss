@@ -23,8 +23,6 @@ begin
     puts "gem install jeweler"
   end
 
-  require 'twss/version'
-
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "twss"
     gemspec.summary = "Pre-trained That's What She Said classifier"

@@ -1,7 +1,7 @@
 TWSS
 ====
 
-Because automation knows no bounds... including low-brow comedy.
+Because automation knows no bounds... including lowbrow comedy.
 
 TWSS is a simple Bayes classifer trained off of a Twitter #twss search.
 
@@ -18,8 +18,9 @@ Usage
     TWSS("not yet, it's taking a while") # => false
     TWSS("well hurry up, you're not going fast enough") # => true
 
-It's far from perfect.  I'll probably continue tweaking it some (increase the
-training set size).  I'm not being all that scientific about, so we'll see.
+It's far from perfect, but it's accurate enough to be funny.  I'll probably
+continue tweaking it some (increase the training set size and whatnot).  I'm not
+being all that scientific about, so we'll see.
 
 
 Goals
