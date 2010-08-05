@@ -33,7 +33,7 @@ class TWSS
 
     # A little cleanup of the text before we train on it.
     def strip_tweet(text)
-      t = text.gsub(/[\@\#]\W+\b/i, '') # strip mentions and hashtags
+      t = text.gsub(/[\@\#]\w+\b/i, '') # strip mentions and hashtags
       t.gsub!(/(RT|OH)\W/i, '') # strip RT's and OH's
       t.gsub!(/twss/i, '') # strip out twss itself
       t.gsub!(/http:\/\/[A-Za-z0-9\.\/]+/, '') # URLs

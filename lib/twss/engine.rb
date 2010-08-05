@@ -38,6 +38,7 @@ class TWSS
       o.close
     end
 
+    # Clears out the current classifier instance and nukes the data file
     def clear_state!
       File.delete(@data_file) if File.exists?(@data_file)
       @classifier = new_classifier
