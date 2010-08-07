@@ -26,7 +26,7 @@ begin
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "twss"
     gemspec.summary = "Pre-trained That's What She Said classifier"
-    gemspec.description = %{Pre-trained "That's What She Said" bayes classifier.
+    gemspec.description = %{Pre-trained "That's What She Said" Bayes classifier.
       Given a string, returns true if it's a TWSS joke.  Pre-trained from
       Twitter #twss.  Let the twss mashups begin!}
     gemspec.email = "bvandenbos@gmail.com"
