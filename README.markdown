@@ -13,6 +13,7 @@ Installation
 Usage
 -----
 
+    require 'rubygems'
     require 'twss'
     TWSS("hey, did you resolve that ticket?") # => false
     TWSS("not yet, it's taking a while") # => false
