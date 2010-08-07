@@ -1,6 +1,6 @@
 #require 'twitter'
 
-class TWSS
+module TWSS
 
   class Trainer
 
@@ -14,6 +14,9 @@ class TWSS
 
     def train
       path = File.join(File.dirname(__FILE__), '../../data/')
+
+      puts "Clearing state..."
+      engine.clear_state!
 
       puts "Training NON-TWSS strings..."
       File.read(File.join(path, 'non_twss.txt')).each_line do |l|
@@ -29,6 +32,9 @@ class TWSS
       engine.dump_classifier_to_file
 
       puts "Done."
+      puts
+
+      run_examples
     end
 
     # A little cleanup of the text before we train on it.
@@ -40,6 +46,21 @@ class TWSS
       t.gsub!(/[\W\d]/, ' ') # now all non word chars and numbers
       t.strip!
       t
+    end
+
+    def run_examples
+      ["how big is that thing going to get?",
+       "umm... that's the not the right hole",
+       "did you resolve the ticket?",
+       "did you fix the bug?",
+       "you're going to need to go faster",
+       "I'm almost there, keep going",
+       "Ok, send me a pull request",
+       "The president issued a decree",
+       "I don't get it, this isn't working correctly",
+       "finished specialties in the warehouse"].each do |s|
+         puts '"' + s + '" => ' + TWSS(s).to_s
+       end
     end
 
   end

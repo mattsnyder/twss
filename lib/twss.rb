@@ -3,11 +3,17 @@ require 'forwardable'
 
 require File.join(File.dirname(__FILE__), 'twss/engine')
 
-class TWSS
+module TWSS
 
   Version = '0.0.1'
 
+  extend Forwardable
+
   class << self
+
+    extend Forwardable
+
+    def_delegators :engine, :threshold, :threshold=
 
     def classify(str)
       engine.classify(str)

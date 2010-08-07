@@ -1,6 +1,6 @@
 require 'twitter'
 
-class TWSS
+module TWSS
 
   class TweetCollector
 

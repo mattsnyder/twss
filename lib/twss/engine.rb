@@ -1,6 +1,6 @@
 require 'classifier'
 
-class TWSS
+module TWSS
 
   class Engine
 
@@ -12,11 +12,13 @@ class TWSS
 
     TRUE = '1'
     FALSE = '0'
-    THRESHOLD = 4.0
+
+    attr_accessor :threshold
     
-    def initialize(data_file = DATA_FILE)
-      @data_file = DATA_FILE
-      @classifier = load_classifier_from_file!(data_file) || new_classifier
+    def initialize(options = {})
+      @data_file = options[:data_file] || DATA_FILE
+      @threshold ||= options[:threshold] || 5.0
+      @classifier = load_classifier_from_file!(@data_file) || new_classifier
     end
 
     def classify(str)
@@ -25,7 +27,8 @@ class TWSS
         # We want to be a little stricter about matches, so
         # compare the differences against a threshold rather than just taking
         # the lowest score.
-        c[TRUE] - c[FALSE] > THRESHOLD
+        puts c[TRUE] - c[FALSE]
+        c[TRUE] - c[FALSE] > threshold
       else
         false
       end
