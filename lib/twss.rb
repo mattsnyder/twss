@@ -7,8 +7,6 @@ module TWSS
 
   Version = '0.0.1'
 
-  extend Forwardable
-
   class << self
 
     extend Forwardable

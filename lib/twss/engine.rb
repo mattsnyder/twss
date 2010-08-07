@@ -24,9 +24,6 @@ module TWSS
     def classify(str)
       if basic_conditions_met?(str)
         c = @classifier.classifications(str)
-        # We want to be a little stricter about matches, so
-        # compare the differences against a threshold rather than just taking
-        # the lowest score.
         c[TRUE] - c[FALSE] > threshold
       else
         false

@@ -18,9 +18,14 @@ Usage
     TWSS("not yet, it's taking a while") # => false
     TWSS("well hurry up, you're not going fast enough") # => true
 
+You can also adjust the scoring threshold for your comedic customization.  The
+lower the value, the more "obscure" the jokes can be.
+
+    TWSS.treshold = 2.0
+
 It's far from perfect, but it's accurate enough to be funny.  I'll probably
 continue tweaking it some (increase the training set size and whatnot).  I'm not
-being all that scientific about, so we'll see.
+being all that scientific about, so we'll see :).
 
 
 Goals
