@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ben VandenBos"]
-  s.date = %q{2010-08-05}
+  s.date = %q{2010-08-07}
   s.description = %q{Pre-trained "That's What She Said" bayes classifier.
       Given a string, returns true if it's a TWSS joke.  Pre-trained from
       Twitter #twss.  Let the twss mashups begin!}
@@ -30,7 +30,8 @@ Gem::Specification.new do |s|
      "lib/twss/tweet_collector.rb",
      "script/collect_non_twss.rb",
      "script/collect_twss.rb",
-     "script/train.rb"
+     "script/train.rb",
+     "twss.gemspec"
   ]
   s.homepage = %q{http://github.com/bvandenbos/twss}
   s.rdoc_options = ["--charset=UTF-8"]

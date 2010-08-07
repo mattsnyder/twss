@@ -27,7 +27,6 @@ module TWSS
         # We want to be a little stricter about matches, so
         # compare the differences against a threshold rather than just taking
         # the lowest score.
-        puts c[TRUE] - c[FALSE]
         c[TRUE] - c[FALSE] > threshold
       else
         false
