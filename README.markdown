@@ -28,15 +28,14 @@ It's far from perfect, but it's accurate enough to be funny.  I'll probably
 continue tweaking it some (increase the training set size and whatnot).  I'm not
 being all that scientific about, so we'll see :).
 
-
 Goals
 -----
 
-There's a few mashups I'd like to see:
+There aren't any, other than to laugh.
 
- * IRC bot (obviously)
- * Maybe a news feed filter (TWSS in the News, for instance)
+I made [twssbot][twssbot] which is a TWSS IRC bot that using twss and [isaac][isaac]
 
+I'd love to see some other random applications of twss, but not a twitter bot.
 For the love of all things good in this world, please don't make a Twitter
 bot out of this. #ihatetwitterbots
 
@@ -44,3 +43,5 @@ Forks, patches, and tests welcome!
 
 Have fun!
 
+[twssbot]: http://github.com/bvandenbos/twssbot
+[isaac]: http://github.com/ichverstehe/isaac
