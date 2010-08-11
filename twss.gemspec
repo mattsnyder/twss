@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{twss}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ben VandenBos"]
-  s.date = %q{2010-08-07}
-  s.description = %q{Pre-trained "That's What She Said" bayes classifier.
+  s.date = %q{2010-08-11}
+  s.description = %q{Pre-trained "That's What She Said" Bayes classifier.
       Given a string, returns true if it's a TWSS joke.  Pre-trained from
       Twitter #twss.  Let the twss mashups begin!}
   s.email = %q{bvandenbos@gmail.com}
