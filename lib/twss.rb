@@ -5,7 +5,7 @@ require File.join(File.dirname(__FILE__), 'twss/engine')
 
 module TWSS
 
-  Version = '0.0.1'
+  Version = '0.0.2'
 
   class << self
 
